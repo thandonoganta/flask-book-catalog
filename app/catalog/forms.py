@@ -21,4 +21,3 @@ class CreateBookForm(FlaskForm):
     num_pages = IntegerField('Pages', validators=[DataRequired()])
     pub_id = IntegerField('PublisherID', validators=[DataRequired()])
     submit = SubmitField('Create')
-

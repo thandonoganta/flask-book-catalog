@@ -36,5 +36,3 @@ def create_app(config_type):
 
 
     return app
-
-

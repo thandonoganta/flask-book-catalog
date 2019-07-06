@@ -70,4 +70,3 @@ def create_book(pub_id):
 
 
 # https://svgsilh.com/ for free pictures
-

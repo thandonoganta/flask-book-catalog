@@ -2,10 +2,16 @@
 
 {% block content %}
     <div class="container">
-        <h4 style="margin-left: 45px" Update ></h4>
-
-        {{ form.hidden_tag() }}
-        {{ wtf.quick_form(form) }}
-
+        <h4 style="margin-left: 45px"> Delete this book? </h4>
+        <hr>
+            <p style="margin-left: 45px">
+                Book Id: {{ book.id }} <br>
+                Title: {{ book.title }} <br>
+                Author: {{ book.author }}
+            </p>
+        <br>
+        <form action="{{ url_for('main.delete_book',book_id=book.id) }}" method="POST" style="margin-left: 45px">
+            <button type="submit" class="btn btn-sm btn-primary"> Delete </button>
+        </form>
     </div>
-{% endblock %}
+{% endblock content %}
